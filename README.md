@@ -39,9 +39,31 @@ Add the following config to the `components` section to the `config/web.php`, `c
 
 Replace the necessary fields with your own twilio account data, which you can find in twilio [control panel](https://www.twilio.com/console) 
 
-## Reference
+## Methods Reference (TODO)
+
+#### generateCapabilityToken
+#### generateVoiceAuthToken()
+#### generateVideoAuthToken
+#### generateChatAuthToken
+#### sendSms
+#### call
+
+
+## Usage
+
+Sample useage in REST API controller:
 
 ```php
+namespace app\controllers;
 
+use yii\rest\ActiveController;
+
+class ApiController extends ActiveController
+{
+    public $modelClass = '';
+
+    public function actionGetVoiceAuthToken() {
+        return \Yii::$app->twilio->generateVoiceAuthToken();
+    }
+}
 ```
-
