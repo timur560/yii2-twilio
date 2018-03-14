@@ -1,0 +1,24 @@
+{
+  "name": "timur560/yii2-twilio",
+  "type": "yii2-extension",
+  "description": "Twilio extension for Yii2 framework",
+  "keywords": ["yii2", "twilio", "sms", "call"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Reinvently",
+      "email": "hello@reinvently.com"
+    }
+  ],
+
+  "require": {
+    "yiisoft/yii2": "~2.0.0",
+    "twilio/sdk": "^5.16"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "Reinvently\\Twilio\\": ""
+    }
+  }
+}
